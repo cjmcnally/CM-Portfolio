@@ -5,43 +5,49 @@ import TabButton from "./TabButton";
 
 const TAB_DATA = [
   {
-    title: "Skills",
-    id: "skills",
+    title: "Languages",
+    id: "languages",
     content: (
       <ul className="list-disc pl-2">
-        <li>Node.js</li>
-        <li>Express</li>
-        <li>PostgreSQL</li>
-        <li>Sequelize</li>
+        <li>Python</li>
+        <li>Java</li>
         <li>JavaScript</li>
-        <li>React</li>
+        <li>TypeScript</li>
+        <li>SQL</li>
+        <li>C++</li>
       </ul>
     ),
   },
   {
-    title: "Education",
-    id: "education",
+    title: "Frameworks",
+    id: "frameworks",
     content: (
       <ul className="list-disc pl-2">
-        <li>Fullstack Academy of Code</li>
-        <li>University of California, Santa Cruz</li>
+        <li>React.js</li>
+        <li>Next.js</li>
+        <li>React Native</li>
+        <li>Flutter</li>
       </ul>
     ),
   },
   {
-    title: "Certifications",
-    id: "certifications",
+    title: "Applications",
+    id: "applications",
     content: (
       <ul className="list-disc pl-2">
-        <li>AWS Cloud Practitioner</li>
-        <li>Google Professional Cloud Developer</li>
+        <li>Git</li>
+        <li>GitHub</li>
+        <li>Node.js</li>
+        <li>Firebase</li>
+        <li>VS Code</li>
+        <li>Figma</li>
       </ul>
     ),
   },
 ];
 
 const AboutSection = () => {
-  const [tab, setTab] = useState("skills");
+  const [tab, setTab] = useState("languages");
   const [isPending, startTransition] = useTransition();
 
   const handleTabChange = (id) => {
@@ -53,38 +59,40 @@ const AboutSection = () => {
   return (
     <section className="text-white" id="about">
       <div className="md:grid md:grid-cols-2 gap-8 items-center py-8 px-4 xl:gap-16 sm:py-16 xl:px-16">
-        <Image src="/images/about-image.png" width={500} height={500} />
+        <Image src="/images/about.png" width={500} height={500} />
         <div className="mt-4 md:mt-0 text-left flex flex-col h-full">
           <h2 className="text-4xl font-bold text-white mb-4">About Me</h2>
           <p className="text-base lg:text-lg">
-            I am a full stack web developer with a passion for creating
-            interactive and responsive web applications. I have experience
-            working with JavaScript, React, Redux, Node.js, Express, PostgreSQL,
-            Sequelize, HTML, CSS, and Git. I am a quick learner and I am always
-            looking to expand my knowledge and skill set. I am a team player and
-            I am excited to work with others to create amazing applications.
+            I am a Computer Science student at Worcester Polytechnic Institute
+            with a passion for building impactful software. I specialize in
+            full-stack development and have experience creating web and mobile
+            applications. My projects range from AI-powered math visualization
+            tools to mental health apps, reflecting my drive to combine
+            technology with real-world problem-solving. I'm always looking for
+            opportunities to learn, collaborate, and bring ideas to life through
+            clean, scalable code.
           </p>
           <div className="flex flex-row justify-start mt-8">
             <TabButton
-              selectTab={() => handleTabChange("skills")}
-              active={tab === "skills"}
+              selectTab={() => handleTabChange("languages")}
+              active={tab === "languages"}
             >
               {" "}
-              Skills{" "}
+              Languages{" "}
             </TabButton>
             <TabButton
-              selectTab={() => handleTabChange("education")}
-              active={tab === "education"}
+              selectTab={() => handleTabChange("frameworks")}
+              active={tab === "frameworks"}
             >
               {" "}
-              Education{" "}
+              Frameworks{" "}
             </TabButton>
             <TabButton
-              selectTab={() => handleTabChange("certifications")}
-              active={tab === "certifications"}
+              selectTab={() => handleTabChange("applications")}
+              active={tab === "applications"}
             >
               {" "}
-              Certifications{" "}
+              Applications{" "}
             </TabButton>
           </div>
           <div className="mt-8">
