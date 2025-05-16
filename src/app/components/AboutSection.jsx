@@ -59,18 +59,23 @@ const AboutSection = () => {
   return (
     <section className="text-white" id="about">
       <div className="md:grid md:grid-cols-2 gap-8 items-center py-8 px-4 xl:gap-16 sm:py-16 xl:px-16">
-        <Image src="/images/about.png" width={500} height={500} />
+        <Image
+          src="/images/about.png"
+          width={500}
+          height={500}
+          alt="Illustration of software development setup"
+        />
         <div className="mt-4 md:mt-0 text-left flex flex-col h-full">
           <h2 className="text-4xl font-bold text-white mb-4">About Me</h2>
           <p className="text-base lg:text-lg">
-            I am a Computer Science student at Worcester Polytechnic Institute
+            {`I'am a Computer Science student at Worcester Polytechnic Institute
             with a passion for building impactful software. I specialize in
             full-stack development and have experience creating web and mobile
             applications. My projects range from AI-powered math visualization
             tools to mental health apps, reflecting my drive to combine
             technology with real-world problem-solving. I'm always looking for
             opportunities to learn, collaborate, and bring ideas to life through
-            clean, scalable code.
+            clean, scalable code.`}
           </p>
           <div className="flex flex-row justify-start mt-8">
             <TabButton
