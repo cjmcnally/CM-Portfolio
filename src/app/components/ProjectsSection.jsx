@@ -8,7 +8,7 @@ const projectsData = [
   {
     id: 1,
     title: "EzSports",
-    description: "EzSports description",
+    description: "",
     image: "/images/projects/1.png",
     tag: ["All", "Mobile"],
     gitUrl: "https://github.com/cjmcnally/EzSports",
@@ -17,7 +17,7 @@ const projectsData = [
   {
     id: 2,
     title: "Vis-Math",
-    description: "Vis-Math description",
+    description: "",
     image: "/images/projects/2.png",
     tag: ["All", "Web"],
     gitUrl: "https://github.com/cjmcnally/VisMath",
@@ -26,7 +26,7 @@ const projectsData = [
   {
     id: 3,
     title: "Image & Matrix Transformations",
-    description: "Matrix Transformations description",
+    description: "",
     image: "/images/projects/3.png",
     tag: ["All", "Web"],
     gitUrl: "https://github.com/cjmcnally/Linear-Image-Transformation",
@@ -35,7 +35,7 @@ const projectsData = [
   {
     id: 4,
     title: "Depress-Minus Mobile App",
-    description: "Depress-Minus description",
+    description: "",
     image: "/images/projects/4.png",
     tag: ["All", "Mobile"],
     gitUrl: "https://github.com/cjmcnally/Depriminus",
@@ -44,7 +44,7 @@ const projectsData = [
   {
     id: 5,
     title: "Solar System Simulation",
-    description: "Simulation description",
+    description: "",
     image: "/images/projects/5.png",
     tag: ["All", "Web"],
     gitUrl: "https://github.com/cjmcnally/orbitAnimation",
