@@ -10,11 +10,12 @@ const TAB_DATA = [
     content: (
       <ul className="list-disc pl-2">
         <li>Python</li>
+        <li>TypeScript</li>
+        <li>C++</li>
         <li>Java</li>
         <li>JavaScript</li>
-        <li>TypeScript</li>
         <li>SQL</li>
-        <li>C++</li>
+        <li>C</li>
       </ul>
     ),
   },
@@ -31,16 +32,16 @@ const TAB_DATA = [
     ),
   },
   {
-    title: "Applications",
+    title: "Tools",
     id: "applications",
     content: (
       <ul className="list-disc pl-2">
-        <li>Git</li>
-        <li>GitHub</li>
         <li>Node.js</li>
         <li>Firebase</li>
-        <li>VS Code</li>
         <li>Figma</li>
+        <li>Drizzle ORM</li>
+        <li>Clerk</li>
+        <li>Stripe</li>
       </ul>
     ),
   },
