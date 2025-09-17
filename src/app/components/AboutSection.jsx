@@ -15,7 +15,6 @@ const TAB_DATA = [
         <li>Java</li>
         <li>JavaScript</li>
         <li>SQL</li>
-        <li>C</li>
       </ul>
     ),
   },

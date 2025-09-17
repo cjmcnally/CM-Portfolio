@@ -18,7 +18,7 @@ const achievementsList = [
   {
     prefix: "~",
     metric: "Users",
-    value: "50",
+    value: "500",
     postfix: "+",
   },
   {
@@ -28,6 +28,7 @@ const achievementsList = [
   {
     metric: "Years",
     value: "4",
+    postfix: "+",
   },
 ];
 
